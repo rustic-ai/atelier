@@ -34,7 +34,7 @@ services:
     command: npm start
     environment:
       - LOG_LEVEL=info
-      - NODE_CONFIG={"rusticApiServer":"http://api_server:8880/","tracingProvider":"zipkin","tracingServer":"http://zipkin:9411/api/v2"}
+      - NODE_CONFIG={"rusticApiServer":"http://api_server:8880","tracingProvider":"zipkin","tracingServer":"http://zipkin:9411/api/v2","maximumOrganizations":1,"maximumActiveGuilds":2}
       - RUSTIC_POSTGRES_URI=postgres://admin:Pa55W0rd@postgres:5432/platform_session
       - RUSTIC_SESSION_SECRET=1@sdfjkl2!
       - RUSTIC_SESSION_DURATION_IN_SECS=28800
